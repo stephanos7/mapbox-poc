@@ -4,6 +4,8 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var MapboxClient = require('mapbox/lib/services/geocoding');
+var client = new MapboxClient('pk.eyJ1Ijoic3RlcGhvcyIsImEiOiJjajUwMDZ0a2owZnVoMndyc3RmMThmaXQzIn0.UAmYMHUVPUHH0B1--7G4JQ');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
